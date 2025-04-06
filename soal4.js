@@ -1,5 +1,3 @@
-const prompt = require("prompt-sync")();
-
 function cekDuplikat(arr) {
     const checkDuplicates = [];
     let i = 0;
@@ -7,15 +5,15 @@ function cekDuplikat(arr) {
     while (!hasDuplicates) {
         if (checkDuplicates.includes(arr[i])) {
             hasDuplicates = true;
-            console.log(checkDuplicates, "\n");
+            // console.log(checkDuplicates, "\n");
         }
         checkDuplicates.push(arr[i]);
         i++;
     }
     return hasDuplicates; 
 }
-let input = prompt("Masukkan rangkaian bilangan yang akan dicek (pisahkan dengan koma): ");
-let inputArr = input.split(',').map(item => parseInt(item));
+
+let inputArr = [20, 1, 3, 2, 4, 6, 8, 5, 7, 9, 11, 13, 15, 10,  12, 14, 16, 18, 20, 17, 19];
 
 let hasil = cekDuplikat(inputArr);
 console.log(hasil);
