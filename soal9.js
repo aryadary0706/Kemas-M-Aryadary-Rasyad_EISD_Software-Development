@@ -25,11 +25,11 @@ function analisaAnakNakal(namaAnak) {
     }
 }
 
-// Meminta input dari pengguna
-let input = prompt("Masukkan nama anak-anak (pisahkan dengan koma): ");
-//contoh: “Aisyah” , “Bagas”, “Dewi”, ‘Dimas”,  “Eka”, “Fajar”, “Gilang” , “Hana”, “Indra”,  “Jihan”
-// Memecah input menjadi array dan menghapus spasi
-const namaAnakArray = input.split(',').map(nama => nama.replace(/"/g, "").trim());
+const namaAnakArray1 = ["Bagas", "Dimas", "Bagas", "Bagas",  "Indra", "Gilang", "Gilang", "Hana",  "Fajar", "Fajar"];
+const namaAnakArray2 = ["Bagas", "Dimas", "Fajar", "Bagas",  "Indra", "Gilang", "Gilang", "Bagas",  "Fajar", "Fajar"];
+const namaAnakArray3 = ["Aisyah" , "Bagas", "Dewi", "Dimas",  "Eka", "Fajar", "Gilang" , "Hana", "Indra",  "Jihan"]
 
 // Memanggil fungsi analisaAnakNakals dengan array nama anak
-analisaAnakNakal(namaAnakArray);
+analisaAnakNakal(namaAnakArray1);
+analisaAnakNakal(namaAnakArray2);
+analisaAnakNakal(namaAnakArray3);
