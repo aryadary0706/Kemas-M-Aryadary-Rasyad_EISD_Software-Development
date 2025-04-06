@@ -1,34 +1,20 @@
 const prompt = require("prompt-sync")()
 // Data produk
 const products = [
-    { name: "TV", category: "elektronik", price: 1000 },
-    { name: "headphone", category: "elektronik", price: 200 },
-    { name: "baju", category: "fashion", price: 50 },
-    { name: "gitar", category: "musik", price: 300 },
-    { name: "sepatu", category: "olahraga", price: 80 },
-    { name: "kamera", category: "elektronik", price: 600 }
+    {name: "TV", category: "elektronik", price: 1000 },
+    {name: "headphone", category: "elektronik", price: 200 },
+    {name: "baju", category: "fashion", price: 50 },
+    {name: "gitar", category: "musik", price: 300 },
+    {name: "sepatu", category: "olahraga", price: 80 },
+    {name: "kamera", category: "elektronik", price: 600 }
 ];
 
 
-const customers = [];
-
-
-function addCustomer() {
-    while (true) {
-        const name = prompt("Masukkan nama pelanggan (atau ketik 'selesai' untuk mengakhiri):");
-        if (name.toLowerCase() === "end") {
-            break;
-        }
-
-        const interestsInput = prompt("Masukkan minat pelanggan (pisahkan dengan koma):");
-        const interests = interestsInput.split(",").map(interest => interest.trim().toLowerCase());
-
-        const purchasesInput = prompt("Masukkan produk yang dibeli pelanggan (pisahkan dengan koma):");
-        const purchases = purchasesInput.split(",").map(purchase => purchase.trim().toLowerCase());
-
-        customers.push({ name, interests, purchases });
-    }
-}
+const customers = [
+    {name: "Rina", interest: ["elektronik", "musik"], purchases: ["TV", "headphone"]},
+    {name: "Budi", interest: ["fashion", "musik"], purchases: ["baju", "gitar"]},
+    {name: "Hartono", interest: ["olahraga", "elektronik"], purchases: ["sepatu", "Kamera"]},
+];
 
 
 function recommendProducts(customerName) {
@@ -41,11 +27,6 @@ function recommendProducts(customerName) {
 
     return recommendedProducts;
 }
-
-
-addCustomer();
-console.log("\n");
-
 
 console.log("\n");
 console.log("Rekomendasi barang yang dibeli sesuai minat dan keperluan: ")
