@@ -23,4 +23,4 @@ function getCombinations(name, maxLength) {
 
 let name = "Naip Lovyu";
 let maxLength = 6;
-console.log("Total kombinasi username:", getCombinations(name, maxLength));
+console.log("Total kombinasi username dari 'Naip Lovyu'", getCombinations(name, maxLength));
