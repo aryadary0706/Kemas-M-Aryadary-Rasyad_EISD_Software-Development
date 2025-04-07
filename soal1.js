@@ -25,4 +25,3 @@ if (Hasil1.length > 0 && Hasil2.length > 0) {
 }else{
     console.log("Tidak ada DATA RATING");
 }
-
