@@ -11,8 +11,8 @@ function Palindrome(text){
     }
 }
 
-console.log(Palindrome("Angsa"));
-console.log(Palindrome("KataK"));
-console.log(Palindrome("kasur empuk"));
-console.log(Palindrome("Aku Suka Kamu"));
-console.log(Palindrome("Ibu Ratna Antar Ubi"));
+console.log("Apakah 'Angsa' Palindrome?", Palindrome("Angsa"));
+console.log("Apakah 'KataK' Palindrome?", Palindrome("KataK"));
+console.log("Apakah 'kasur empuk' Palindrome?", Palindrome("kasur empuk"));
+console.log("Apakah 'Aku Suka Kamu' Palindrome?",Palindrome("Aku Suka Kamu"));
+console.log("Apakah 'Ibu Ratna Antar Ubi' Palindrome", Palindrome("Ibu Ratna Antar Ubi"));
